@@ -16,21 +16,27 @@ namespace Zadatak3
 
             foreach (char slovo in unos)
             {
-                if (slovo >= 97)
+                if (slovo >= 97 || (slovo >= 65 && slovo <= 91))
                 {
-                if (slovo + n <= 122)
+                    if (slovo + n <= 122 || (slovo >= 65 && slovo <= 91))
                     {
                         Console.Write($"{(char)(slovo + n)}");
+
                     }
-                    else
+                    else if (slovo + n > 91 && slovo + n < 97  )
                     {
-                        Console.Write(((slovo + n) - 122) + 97);
+                        Console.Write($"{ (char)((slovo + n) - 91) + 64}");
                     }
+                else
+                {
+                    Console.Write($"{ (char)(((slovo + n)-122)+96)}");
+                }
                 } else
                 {
                     Console.Write(slovo);
                 }
-        }
+            }
+            
 
             Console.ReadKey();
         }
