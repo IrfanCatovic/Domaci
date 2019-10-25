@@ -10,6 +10,7 @@ namespace Zadatak5
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Unesite broj: ");
             int n = int.Parse(Console.ReadLine());
             while (n != 1) //ako hocemo beskonacnu petlju, da nam vrti vrednost 4, 2 ,1 samo uslov postavimo (true)
             {

@@ -29,7 +29,7 @@ namespace Domaci
                     continue;
 
                 }
-                    if (i % 3 == 0)
+                if (i % 3 == 0)
                 {
                     Console.Write($" -- Fizz\t");
                     i++;

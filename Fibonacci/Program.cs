@@ -11,8 +11,8 @@ namespace Fibonacci
         static void Main(string[] args)
         {
             Console.WriteLine("Unesite velicinu niza");
-            int n = int.Parse(Console.ReadLine());
-            int[] niz = new int[n];
+            long n = long.Parse(Console.ReadLine());
+            long[] niz = new long[n];
             niz[0] = 0;      Console.Write($"{niz[0]} ");
             niz[1] = 1;      Console.Write($"{niz[1]} ");
 
