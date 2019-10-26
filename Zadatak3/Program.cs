@@ -12,6 +12,7 @@ namespace Zadatak3
         {
             string unos = Console.ReadLine();
             int n = int.Parse(Console.ReadLine());
+            string unos2 = null;
 
 
             foreach (char slovo in unos)
@@ -21,22 +22,28 @@ namespace Zadatak3
                     if (slovo + n <= 122 || (slovo >= 65 && slovo <= 91))
                     {
                         Console.Write($"{(char)(slovo + n)}");
+                        unos2 += ($"{(char)(slovo + n)}");
 
                     }
                     else if (slovo + n > 91 && slovo + n < 97  )
                     {
                         Console.Write($"{ (char)((slovo + n) - 91) + 64}");
+                        unos2 += ($"{ (char)((slovo + n) - 91) + 64}");
                     }
                 else
                 {
                     Console.Write($"{ (char)(((slovo + n)-122)+96)}");
-                }
+                        unos2 += ($"{ (char)(((slovo + n) - 122) + 96)}");
+                    }
                 } else
                 {
                     Console.Write(slovo);
+                    unos2 += (slovo);
                 }
             }
-            
+
+            Console.WriteLine();
+            Console.WriteLine(unos2);
 
             Console.ReadKey();
         }
