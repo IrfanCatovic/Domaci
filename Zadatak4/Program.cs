@@ -25,7 +25,7 @@ namespace Zadatak4
                     {
                         Console.Write("*"); //ispis visina
                     }                   
-                    if (i == 0 && j>0 && j<n - 1) //ispis gornje stranice
+                    if (i == 0 && j>0 && j < n - 1) //ispis gornje stranice
                     {
                         Console.Write("*");
                     }
